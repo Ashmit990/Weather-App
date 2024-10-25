@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto",sans-serif,Arial;
+    font-family: "Inder", sans-serif;
     color: white;
 }
 body{

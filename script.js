@@ -4,7 +4,7 @@ let humidity=document.querySelector(".humidity");
 let windSpeed=document.querySelector(".wind-speed");
 let weatherIcon=document.querySelector(".icon")
 let temp=document.querySelector(".temp")
-let myLocation=document.querySelector("#location")
+let myLocation=document.querySelector(".location-container")
 cityName=document.querySelector(".city");
 let miniContainer=document.querySelector(".mini-container")
 
