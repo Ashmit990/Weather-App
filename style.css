@@ -14,8 +14,8 @@ body{
     margin-top: 10px;
 }
 .container{
-    width: 400px;
-    height: 500px;
+    width: 470px;
+    min-height: 105px;
     background-color: #010F2D;
     margin: 20px auto;
     padding: 20px;
@@ -33,7 +33,7 @@ body{
     width: 100%;
     height: 60px;
     background-color: white;
-    border-radius: 30px;
+    
     display: flex;
     justify-content: space-between;
     border: 0.5px solid white;
@@ -41,9 +41,8 @@ body{
 }
 .input-search .txt{
     height: 100%;
-    width: 85%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    width: 70%;
+    
     outline: none;
     border-top: none;
     border-bottom: none;
@@ -67,9 +66,8 @@ body{
 }
 .input-search .search{
     height: 100%;
-    width: 18%;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    width: 17%;
+    
     border-top: none;
     border-bottom: none;
     border-right: none;
@@ -132,3 +130,20 @@ body{
 .temp{
     font-size: 42px;
 }
+.mini-container{
+    display: none;
+}
+
+.location-container{
+    border-top: none;
+    border-bottom: none;
+    border-left: 0.5px solid white;
+    width: 55px;
+    background-color: #28427d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
