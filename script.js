@@ -24,10 +24,10 @@ async function getWeather(){
 
         console.log(data)
 
-        temp.innerHTML=data.main.temp+"°C";
+        temp.innerHTML=Math.round(data.main.temp)+"°C";
         cityName.innerHTML=data.name;
-        humidity.innerHTML=data.main.humidity+"%";
-        windSpeed.innerHTML=data.wind.speed+"m/s";
+        humidity.innerHTML=Math.round(data.main.humidity)+"%";
+        windSpeed.innerHTML=Math.round(data.wind.speed)+"m/s";
 
         if(data.weather[0].main==="Clear"){
         weatherIcon.src="clear.png"
@@ -68,10 +68,10 @@ async function getMyLocation() {
 
            console.log(data);
 
-           temp.innerHTML = data.main.temp + "°C";
+           temp.innerHTML = Math.round(data.main.temp) + "°C";
            cityName.innerHTML = data.name;
-           humidity.innerHTML = data.main.humidity + "%";
-           windSpeed.innerHTML = data.wind.speed + "m/s";
+           humidity.innerHTML = Math.round(data.main.humidity) + "%";
+           windSpeed.innerHTML = Math.round(data.wind.speed) + "m/s";
 
            if (data.weather[0].main === "Clear") {
                weatherIcon.src = "clear.png";
