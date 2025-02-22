@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="2510316_ashmitdahal_weatherapp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <form  class="box">
+            <input autocomplete="off" placeholder="Search City" id="input-box" name="city" type="text">
+            <i id="search" class="fa-solid fa-magnifying-glass fa-2x" style="color: #454545;"></i>
+        </form>
+
+       
+            <img src="" alt="" class="iconBox">
+       
+        
+        
+        <p id="cityBox"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> <span id="city">City Name</span></p>
+        <p id="main-wc">Condition</p>
+        <div class="mini-box">
+            <p class="abs" id="date">dd/mm/yy</p>
+
+           
+            <p class="abs" id="temperature">temperature </p>
+
+            <p class="abs" id="wc">conditions</p>
+            <div class="divs">
+                <i class="icons fa-brands fa-slack" style="color: #ffffff;"></i>
+                <p class="hpa">Pressure</p>
+                <p class="line">|</p>
+                <p class="abss" id="pressure"></p>
+            </div>
+
+            <div class="divs">
+                <i class="icons fa-solid fa-droplet" style="color: #ffffff;"></i>
+                <p class="hpa">Humidity</p>
+                <p class="line">|</p>
+                <p class="abss" id="humidity"></p>
+            </div>
+
+            <div class="divs">
+                <i class="icons fa-solid fa-wind"></i>
+                <p class="hpa">W-Speed</p>
+                <p class="line">|</p>
+                <p class="abss" id="wind-speed"></p>
+            </div>
+
+            <div class="divs">
+                <i class="icons fa-regular fa-compass" style="color: #ffffff;"></i>
+                <p class="hpa">Direction</p>
+                <p class="line">|</p>
+                <p class="abss" id="direction"></p>
+            </div>
+
+           
+           
+           
+           
+        </div>
+        
+    </div>
+
+    <div id="error" class="overlay hidden ">
+        <div class="message-error">
+            <div id="close-icon"><i class="close-error fa-solid fa-xmark fa-2x" style="color: #eb856b;"></i></div>
+          <div id="text-error"><i class="error-icon fa-solid fa-triangle-exclamation" style="color: #eb856b;"></i><p id="not-found-msg">City Not Found</p></div>
+        </div>
+      </div>
+      
+<script src="2510316_ashmitdahal_weatherapp.js"></script>    
+</body>
+</html>
